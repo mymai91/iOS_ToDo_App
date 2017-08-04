@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="228" id="ag6-Yr-jvb">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="228" id="ag6-Yr-jvb" customClass="TaskTableViewCell" customModule="Todo" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="228"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ag6-Yr-jvb" id="fXK-cU-E8g">
@@ -68,6 +68,12 @@
                                         <constraint firstItem="nF4-LX-SQD" firstAttribute="leading" secondItem="fXK-cU-E8g" secondAttribute="leading" id="wwh-9O-J8b"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="locationLabel" destination="OUP-ts-xyF" id="UHX-Sx-pXw"/>
+                                    <outlet property="nameLabel" destination="feq-Gl-Viz" id="fXZ-mr-L5R"/>
+                                    <outlet property="thumbnailImageView" destination="nF4-LX-SQD" id="312-MF-Eff"/>
+                                    <outlet property="typeLabel" destination="iVf-sA-g6m" id="bJh-Q7-oVi"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

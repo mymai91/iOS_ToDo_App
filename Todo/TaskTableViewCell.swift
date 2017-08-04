@@ -9,6 +9,11 @@
 import UIKit
 
 class TaskTableViewCell: UITableViewCell {
+    
+    @IBOutlet var thumbnailImageView: UIImageView!
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var locationLabel: UILabel!
+    @IBOutlet var typeLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
