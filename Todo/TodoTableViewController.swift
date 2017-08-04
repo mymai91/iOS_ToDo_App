@@ -9,10 +9,10 @@
 import UIKit
 
 class TodoTableViewController: UITableViewController {
-    
-    var tasks = [{name: "restaurant1", location: "street1", type: "important"},
-                 {name: "restaurant2", location: "street1", type: "important"},
-                 {name: "restaurant3", location: "street1", type: "important"}]
+    // Init tasks with the type of is Array & Array including task
+    var tasks: [Task] = [Task(image: "task1.jpg", name: "task 1", location: "street 1", type: "type 1"),
+                         Task(image: "task2.jpg", name: "task 2", location: "street 2", type: "type 2"),
+                         Task(image: "task3.jpg", name: "task 3", location: "street 3", type: "type 3")]
     override func viewDidLoad() {
         super.viewDidLoad()
 
