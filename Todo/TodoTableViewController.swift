@@ -10,7 +10,7 @@ import UIKit
 
 class TodoTableViewController: UITableViewController {
     // Init tasks with the type of is Array & Array including task
-    var tasks: [Task] = [Task(image: "task1.jpg", name: "task 1", location: "street 1", type: "type 1"),
+    var tasks:[Task] = [Task(image: "task1.jpg", name: "task 1", location: "street 1", type: "type 1"),
                          Task(image: "task2.jpg", name: "task 2", location: "street 2", type: "type 2"),
                          Task(image: "task3.jpg", name: "task 3", location: "street 3", type: "type 3")]
     override func viewDidLoad() {
@@ -40,25 +40,15 @@ class TodoTableViewController: UITableViewController {
         return tasks.count
     }
     
-//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cellIndentifier = "Cell"
-//        let cell = tableView.dequeueReusableCell(withIdentifier: cellIndentifier, for: indexPath) as! RestaurantTableViewCell
-//        let restaurant = restaurants[indexPath.row]
-//        cell.nameLabel.text = restaurant.name
-//        cell.locationLabel.text = restaurant.location
-//        cell.typeLabel.text = restaurant.type
-//        cell.thumbnailImageView.image = UIImage(data: restaurant.image as! Data)
-//        
-//        return cell
-//    }
-
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIndentifier = "Cell"
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIndentifier, for: indexPath)
-//        let task = tasks[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIndentifier, for: indexPath) as! TaskTableViewCell
+        let todo_task = tasks[indexPath.row]
 
-        // Configure the cell...
+        cell.nameLabel.text = todo_task.name
+        cell.locationLabel.text = todo_task.location
+        cell.typeLabel.text = todo_task.type
+        cell.thumbnailImageView.image = UIImage(named: todo_task.image)
 
         return cell
     }
