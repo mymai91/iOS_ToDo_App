@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vz1-gX-8wX">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,16 +10,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Todo Table View Controller-->
         <scene sceneID="TsN-Fi-sha">
             <objects>
-                <tableViewController id="vz1-gX-8wX" sceneMemberID="viewController">
+                <tableViewController id="vz1-gX-8wX" customClass="TodoTableViewController" customModule="Todo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="228" sectionHeaderHeight="28" sectionFooterHeight="28" id="NrT-ro-TfB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="228" id="ag6-Yr-jvb" customClass="TaskTableViewCell" customModule="Todo" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="228" id="ag6-Yr-jvb" customClass="TaskTableViewCell" customModule="Todo" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="228"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ag6-Yr-jvb" id="fXK-cU-E8g">
@@ -69,10 +69,10 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="locationLabel" destination="OUP-ts-xyF" id="UHX-Sx-pXw"/>
-                                    <outlet property="nameLabel" destination="feq-Gl-Viz" id="fXZ-mr-L5R"/>
-                                    <outlet property="thumbnailImageView" destination="nF4-LX-SQD" id="312-MF-Eff"/>
-                                    <outlet property="typeLabel" destination="iVf-sA-g6m" id="bJh-Q7-oVi"/>
+                                    <outlet property="locationLabel" destination="OUP-ts-xyF" id="coS-kg-scP"/>
+                                    <outlet property="nameLabel" destination="feq-Gl-Viz" id="Qaw-ik-ICs"/>
+                                    <outlet property="thumbnailImageView" destination="nF4-LX-SQD" id="92q-no-xh7"/>
+                                    <outlet property="typeLabel" destination="iVf-sA-g6m" id="7HJ-Y1-ALU"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
