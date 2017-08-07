@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB6BD36F1F34C23D00A7CD32 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6BD36E1F34C23D00A7CD32 /* Task.swift */; };
+		AB6BD3711F34C70800A7CD32 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6BD3701F34C70800A7CD32 /* TaskTableViewCell.swift */; };
+		ABB6B30A1F3360F400B9E329 /* TodoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB6B3091F3360F400B9E329 /* TodoTableViewController.swift */; };
 		ABE7DC031F32166600752863 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE7DC021F32166600752863 /* AppDelegate.swift */; };
-		ABE7DC051F32166600752863 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE7DC041F32166600752863 /* ViewController.swift */; };
 		ABE7DC081F32166600752863 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE7DC061F32166600752863 /* Main.storyboard */; };
 		ABE7DC0A1F32166600752863 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABE7DC091F32166600752863 /* Assets.xcassets */; };
 		ABE7DC0D1F32166600752863 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE7DC0B1F32166600752863 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB6BD36E1F34C23D00A7CD32 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		AB6BD3701F34C70800A7CD32 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		ABB6B3091F3360F400B9E329 /* TodoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoTableViewController.swift; sourceTree = "<group>"; };
 		ABE7DBFF1F32166600752863 /* Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE7DC021F32166600752863 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ABE7DC041F32166600752863 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ABE7DC071F32166600752863 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ABE7DC091F32166600752863 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABE7DC0C1F32166600752863 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				ABE7DC021F32166600752863 /* AppDelegate.swift */,
-				ABE7DC041F32166600752863 /* ViewController.swift */,
 				ABE7DC061F32166600752863 /* Main.storyboard */,
 				ABE7DC091F32166600752863 /* Assets.xcassets */,
 				ABE7DC0B1F32166600752863 /* LaunchScreen.storyboard */,
 				ABE7DC0E1F32166600752863 /* Info.plist */,
+				ABB6B3091F3360F400B9E329 /* TodoTableViewController.swift */,
+				AB6BD36E1F34C23D00A7CD32 /* Task.swift */,
+				AB6BD3701F34C70800A7CD32 /* TaskTableViewCell.swift */,
 			);
 			path = Todo;
 			sourceTree = "<group>";
@@ -136,7 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABE7DC051F32166600752863 /* ViewController.swift in Sources */,
+				AB6BD3711F34C70800A7CD32 /* TaskTableViewCell.swift in Sources */,
+				ABB6B30A1F3360F400B9E329 /* TodoTableViewController.swift in Sources */,
+				AB6BD36F1F34C23D00A7CD32 /* Task.swift in Sources */,
 				ABE7DC031F32166600752863 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +305,7 @@
 				ABE7DC131F32166600752863 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
